@@ -35,10 +35,10 @@ const Home = () => {
     {
       id: 1,
       title: "Manajeman Stok Obat",
-      description: "Sistem manajemen stok obat untuk apotek untuk memantau pengeluaran dan pemasukan obat",
+      description: "Sistem manajemen stok obat untuk apotek yang berfungsi untuk memantau pemasukan dan pengeluaran obat",
       image: stockPic,
       tech: ["Laravel", "Tailwind", "MySQL"],
-      github: "#",
+      github: "https://github.com/Ianrury/Sistock",
       demo: "#",
       category: "web",
     },
@@ -304,7 +304,7 @@ const Home = () => {
 
                   {/* Project Actions */}
                   <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                    <a href={project.github} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300">
+                    <a href={project.github} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300" target="_blank" rel="noopener noreferrer">
                       <Github className="w-5 h-5" />
                     </a>
                     <a href={project.demo} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300">
