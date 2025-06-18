@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { ChevronDown, Github, ExternalLink, Mail, Phone, MapPin, Code, Palette, Smartphone, Server, Database, Globe } from "lucide-react";
 import profilePic from "../assets/person.jpeg";
 import stockPic from "../assets/stok.png";
+import asticelPic from "../assets/articel.png";
+import progresPic from "../assets/progres.png";
+import ponpesPic from "../assets/ponpes.png";
+import librari_app from "../assets/librari_app.png";
+import sistemklinik from "../assets/sistemklinik.png";
 
 const Home = () => {
   const [currentSection, setCurrentSection] = useState("home");
@@ -44,53 +49,83 @@ const Home = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative task management with real-time updates",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
-      tech: ["Vue.js", "Node.js", "Socket.io", "MongoDB"],
-      github: "#",
+      title: "Articel",
+      description: "Aplikasi menampilakn tulisan artikel dengan fitur percarian dan ditulis oleh banyak penulis dan dapat memberikan komentar",
+      image: asticelPic,
+      tech: ["react.js", "Node.js", "Tailwind", "mySQL"],
+      github: "https://github.com/Ianrury/articel",
       demo: "#",
       category: "web",
     },
     {
       id: 3,
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop",
-      tech: ["React Native", "Node.js", "PostgreSQL"],
-      github: "#",
+      title: "Backend Online Bookstore",
+      description: "API toko buku online ini dirancang agar mudah digunakan, dengan mendukung pengelolaan produk, pengguna, pesanan, dan pembayaran yang efisien.",
+      image: "https://deepublishstore.com/wp-content/uploads/2020/02/toko-buku-online.jpg",
+      tech: ["express.js", "Node.js", "PostgreSQL", "PrismaORM"],
+      github: "https://github.com/Ianrury/submission-spbe--Ian-Roery-",
       demo: "#",
-      category: "mobile",
+      category: "web",
     },
     {
       id: 4,
-      title: "AI Dashboard",
-      description: "Analytics dashboard with machine learning insights and React frontend",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
-      tech: ["Python", "Django", "TensorFlow", "D3.js"],
-      github: "#",
-      demo: "#",
-      category: "ai",
+      title: "E-commerce furniture",
+      description: "E-commerce furniture adalah aplikasi web yang memungkinkan pengguna untuk menjelajahi, mencari, dan membeli berbagai produk furnitur secara online.",
+      image: "https://www.exabytes.co.id/blog/wp-content/uploads/2024/03/Sekilas-tentang-Toko-Online.jpg",
+      tech: ["PHP", "Bootstrap", "MySQL"],
+      github: "https://github.com/Ianrury/furnic",
+      demo: "",
+      category: "web",
     },
     {
       id: 5,
-      title: "Social Media Platform",
-      description: "Modern social networking platform with real-time chat and React frontend",
-      image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=400&h=250&fit=crop",
-      tech: ["React", "Express", "Socket.io", "Redis"],
-      github: "#",
+      title: "Sistem Klinik Bidan",
+      description: "Sistem manajemen klinik bidan yang memungkinkan Bidan untuk mengelola pasien, jadwal, riwayat perawatan, dan penjualan obat.",
+      image: sistemklinik,
+      tech: ["laravel", "Tailwind", "MySQL"],
+      github: "https://github.com/Ianrury/skripsi-klinik",
       demo: "#",
       category: "web",
     },
     {
       id: 6,
-      title: "Fitness Tracker",
-      description: "Health and fitness tracking app with workout plans and React frontend",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
-      tech: ["Flutter", "Firebase", "Node.js"],
-      github: "#",
+      title: "Sistem Klinik Fisioterapi",
+      description: "Sistem manajemen klinik fisioterapi yang memungkinkan pasien untuk membuat janji temu, melihat riwayat perawatan, dan mengelola informasi kesehatan mereka.",
+      image: "https://i0.wp.com/www.ciputramedicalcenter.com/wp-content/uploads/2023/01/penyakit-yang-ditangani-fisioterapi-1.jpg?fit=900%2C600&ssl=1",
+      tech: ["CodeIgniter 4", "mySQL", "tailwind"],
+      github: "https://github.com/Ianrury/klinik-fisioterapi",
       demo: "#",
-      category: "mobile",
+      category: "web",
+    },
+    {
+      id: 7,
+      title: "Sistem Informasi Ponpes",
+      description: "Sistem manajemen ponpes yang memungkinkan admin untuk mengelola data siswa, guru, artikel, dan informasi penerimaan santri.",
+      image: ponpesPic,
+      tech: ["Laravel", "Tailwind", "MySQL"],
+      github: "#",
+      demo: "https://ppnahdlatussubban.com/",
+      category: "web",
+    },
+    {
+      id: 8,
+      title: "Manajemen Projek",
+      description: "Sistem simpel manajemen projek yang memungkinkan pengguna untuk membuat, mengelola, dan melacak proyek mereka dengan mudah.",
+      image: progresPic,
+      tech: ["Laravel", "Tailwind", "MySQL"],
+      github: "https://github.com/Ianrury/guru_inovatif",
+      demo: "#",
+      category: "web",
+    },
+    {
+      id: 10,
+      title: "Librari APP",
+      description: "Sistem ini dirancang untuk mempermudah pengguna dalam menelusuri koleksi dan melakukan peminjaman buku yang tersedia di perpustakaan.",
+      image: librari_app,
+      tech: ["react", "Tailwind", "zod", "axios"],
+      github: "https://librari-app.vercel.app/",
+      demo: "#",
+      category: "web",
     },
   ];
 
@@ -225,11 +260,11 @@ const Home = () => {
 
                 <div className="grid grid-cols-2 gap-6 mt-8">
                   <div className="text-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-purple-400">50+</div>
+                    <div className="text-3xl font-bold text-purple-400">6+</div>
                     <div className="text-gray-300">Projects</div>
                   </div>
                   <div className="text-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-pink-400">3+</div>
+                    <div className="text-3xl font-bold text-pink-400"> 7 so run</div>
                     <div className="text-gray-300">Years Experience</div>
                   </div>
                 </div>
@@ -277,7 +312,7 @@ const Home = () => {
 
           {/* Project Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {["all", "web", "mobile", "ai"].map((filter) => (
+            {["all", "web"].map((filter) => (
               <button
                 key={filter}
                 onClick={() => filterProjects(filter)}
@@ -307,9 +342,9 @@ const Home = () => {
                     <a href={project.github} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300" target="_blank" rel="noopener noreferrer">
                       <Github className="w-5 h-5" />
                     </a>
-                    <a href={project.demo} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300">
+                    {/* <a href={project.demo} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300">
                       <ExternalLink className="w-5 h-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 
@@ -343,11 +378,11 @@ const Home = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                   <Mail className="w-6 h-6 text-purple-400" />
-                  <span>developer@email.com</span>
+                  <span>ianroeri@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                   <Phone className="w-6 h-6 text-purple-400" />
-                  <span>+62 123 456 7890</span>
+                  <span>+62 812 2562 1214</span>
                 </div>
                 <div className="flex items-center space-x-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                   <MapPin className="w-6 h-6 text-purple-400" />
