@@ -264,7 +264,7 @@ const Home = () => {
                     <div className="text-gray-300">Projects</div>
                   </div>
                   <div className="text-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-pink-400"> 7 so run</div>
+                    <div className="text-3xl font-bold text-pink-400"> 12 month</div>
                     <div className="text-gray-300">Years Experience</div>
                   </div>
                 </div>
@@ -339,12 +339,17 @@ const Home = () => {
 
                   {/* Project Actions */}
                   <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                    <a href={project.github} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300" target="_blank" rel="noopener noreferrer">
-                      <Github className="w-5 h-5" />
-                    </a>
-                    {/* <a href={project.demo} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300">
-                      <ExternalLink className="w-5 h-5" />
-                    </a> */}
+                    {project.github && project.github !== "#" && (
+                      <a href={project.github} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300" target="_blank" rel="noopener noreferrer">
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
+
+                    {project.demo && project.demo !== "#" && (
+                      <a href={project.demo} className="p-2 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition-all duration-300" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-5 h-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
 
